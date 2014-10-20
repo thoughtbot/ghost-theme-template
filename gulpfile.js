@@ -19,6 +19,7 @@ gulp.task('sass', function () {
 });
 
 // Javascript
+
 gulp.task('jshint', function () {
 	gulp.src('./assets/js/*')
 		.pipe(jshint())
@@ -34,8 +35,7 @@ gulp.task('imagemin', function () {
 		.pipe(notify({ message: 'Image minification task complete' }));
 });
 
-
-gulp.task('default', function() {
+gulp.task('default', ['sass', 'jshint'], function() {
 
 	// Watch sass files
 	gulp.watch('./assets/sass/**/*.scss', ['sass']);
