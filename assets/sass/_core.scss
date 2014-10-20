@@ -8,16 +8,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
 // ========= Clearfix =========
 
 .clearfix {
-	zoom: 1;
-	&:before, &:after {
-		content: "\0020";
-		display: block;
-		height: 0;
-		overflow: hidden;
-	}
-	&:after {
-		clear: both;
-	}
+	@include clearfix;
 }
 
 // ========= Body Global Styles =========
@@ -31,11 +22,12 @@ html {
 }
 
 body {
+	background-color: $base-bg;
 	color: $base-color;
 	font-family: $base-font-family;
+	font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	font-size: $base-font-size;
 	line-height: $base-line-height;
-	background-color: $base-bg;
 	margin: 0;
 }
 

@@ -1,6 +1,5 @@
 # Abstraction
 
-
 A project scaffold for building  [Ghost](http://github.com/tryghost/ghost/) themes using gulp, node-sass, & autoprefixer
 
 [Demo Site](http://abstraction.ghost.io)

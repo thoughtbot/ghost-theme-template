@@ -5,15 +5,12 @@
 
 // This is the default html and body font-size for the base em value.
 $rem-base: 16px;
-$em-base: 16px;
 
 // Fonts size and line height defaults for our calculations
-
 $base-font-size: 1em;
 $base-line-height: 1.6;
 
 // Font sizes are then abstracted to global spacing behaviors
-
 $base-spacing-unit: $base-line-height;
 $base-font-size: 16px;
 
@@ -23,11 +20,9 @@ $base-font-size: 16px;
 
 // ========= Grid Variables =========
 
-// Roll your own, yo
+$base-container-width: rem(1200);
 
 // ========= Media Queries =========
-
-// Media Queries
 
 $small-screen: 768px !default;
 $medium-screen: 1280px !default;
