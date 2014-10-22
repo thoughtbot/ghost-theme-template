@@ -20,7 +20,7 @@ $base-font-size: 16px;
 
 // ========= Grid Variables =========
 
-$base-container-width: rem(1200);
+$base-container-width: 43.75rem;
 
 // ========= Media Queries =========
 
@@ -47,7 +47,7 @@ $h6-font-size: rem-calc(16);
 
 // Small Print
 
-$small-font-size: 65%;
+$small-font-size: 75%;
 
 // Indentation for dl, ul, blockquote
 
@@ -55,8 +55,9 @@ $indent-amount: 1em;
 
 // Fonts
 
-$base-font-family: 'Open Sans', sans-serif;
+$base-font-family: 'Merriweather', sans-serif;
 $header-font-family: 'Open Sans', sans-serif;
+$header-font-weight: 300;
 
 
 // ========= Color Settings =========

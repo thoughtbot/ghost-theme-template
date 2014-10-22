@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Merriweather:400,400italic,700,700italic);
 h1 {
   font-size: 2.75rem; }
 
@@ -20,9 +20,10 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   color: #4b4b4b;
   font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   line-height: 1.25; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    font-size: 65%;
+    font-size: 75%;
     opacity: 0.8;
     line-height: 0; }
 
@@ -75,7 +76,7 @@ sub {
   bottom: -0.25em; }
 
 small {
-  font-size: 65%; }
+  font-size: 75%; }
 
 code, kbd, pre, samp {
   font-family: monospace, serif;
@@ -127,7 +128,7 @@ select, input[type="file"] {
 
 select:focus, input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
   outline: thin dotted #333333;
-  outline: 5px auto-webkit-focus-ring-color;
+  outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px; }
 
 fieldset {
@@ -148,7 +149,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   zoom: 1; }
   .clearfix:before, .clearfix:after {
     content: "\0020";
-    display: block;
+    display: table;
     height: 0;
     overflow: hidden; }
   .clearfix:after {
@@ -162,11 +163,14 @@ html {
   font-size: 100%; }
 
 body {
+  background-color: whitesmoke;
   color: #2b2b2b;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', sans-serif;
+  -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+  -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+  font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   font-size: 16px;
   line-height: 1.6;
-  background-color: whitesmoke;
   margin: 0; }
 
 main {
@@ -274,7 +278,7 @@ table {
   .site-head h2.blog-description {
     font-size: 1.125rem;
     font-weight: 300;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', sans-serif;
     max-width: 43.75rem;
     margin-left: auto;
     margin-right: auto;
@@ -293,21 +297,16 @@ table {
     .post {
       width: 80%; } }
 
-
-
-
 .post-meta {
   display: inline-block;
   margin: 0 0 0.25rem 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   font-size: 1rem;
   color: #9b9b9b; }
   .post-meta a {
     color: #9b9b9b; }
     .post-meta a:hover {
       color: #982d21; }
-
-
 
 .post-template .post-header {
   margin-bottom: 4rem;
@@ -398,8 +397,6 @@ ul.author-meta {
   text-decoration: underline; }
   .pagination a:hover {
     color: #982d21; }
-
-
 
 .site-footer {
   position: relative;
