@@ -24,6 +24,7 @@ gulp.task('sass', function () {
 gulp.task('jshint', function () {
 	gulp.src('./assets/js/*')
 		.pipe(jshint())
+		.pipe(jshint.reporter('jshint-stylish'))
 });
 
 // Tasks
@@ -35,8 +36,5 @@ gulp.task('default', ['sass', 'jshint'], function() {
 
 	// Watch js files
 	gulp.watch('./assets/scripts/**/*.js', ['scripts']);
-
-	// Watch image files
-	gulp.watch('./assets/images/**/*', ['imagemin']);
 
 });
