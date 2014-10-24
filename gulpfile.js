@@ -7,15 +7,17 @@ var sass = require('gulp-sass'),
 	imagemin = require('gulp-imagemin'),
 	notify = require('gulp-notify');
 
-
 // Stylesheets
 
 gulp.task('sass', function () {
 	gulp.src('./assets/sass/*.scss')
-		.pipe(sass({errLogToConsole: true}))
+		.pipe(sass({
+        errLogToConsole: false,
+        onError: function(err) {
+            return notify().write(err);
+        }}))
 		.pipe(autoprefix('last 2 versions'))
 		.pipe(gulp.dest('./assets/css'))
-		.pipe(notify({ message: 'Stylesheet build task complete' }));
 });
 
 // Javascript
@@ -23,7 +25,6 @@ gulp.task('sass', function () {
 gulp.task('jshint', function () {
 	gulp.src('./assets/js/*')
 		.pipe(jshint())
-		.pipe(jshint.reporter('jshint-stylish'));
 });
 
 // Images
@@ -32,7 +33,6 @@ gulp.task('imagemin', function () {
 	gulp.src('./assets/images/*')
 		.pipe(imagemin())
 		.pipe(gulp.dest(''))
-		.pipe(notify({ message: 'Image minification task complete' }));
 });
 
 gulp.task('default', ['sass', 'jshint'], function() {
