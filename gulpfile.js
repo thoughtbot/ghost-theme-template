@@ -24,6 +24,7 @@ gulp.task('sass', function () {
 gulp.task('jshint', function () {
 	gulp.src('./assets/js/*')
 		.pipe(jshint())
+		.pipe(jshint.reporter('jshint-stylish'))
 });
 
 // Tasks
