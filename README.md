@@ -12,6 +12,4 @@ A project scaffold for building [Ghost](http://github.com/tryghost/ghost/) theme
 
 - The amazing power of Autoprefixer
 
-- Image minification
-
 - Js Hint with Stylish

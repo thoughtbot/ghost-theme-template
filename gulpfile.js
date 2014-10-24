@@ -4,7 +4,6 @@ var sass = require('gulp-sass'),
 	autoprefix = require('gulp-autoprefixer'),
 	jshint = require('gulp-jshint'),
 	stylish = require('jshint-stylish'),
-	imagemin = require('gulp-imagemin'),
 	notify = require('gulp-notify');
 
 // Stylesheets
@@ -27,13 +26,7 @@ gulp.task('jshint', function () {
 		.pipe(jshint())
 });
 
-// Images
-
-gulp.task('imagemin', function () {
-	gulp.src('./assets/images/*')
-		.pipe(imagemin())
-		.pipe(gulp.dest(''))
-});
+// Tasks
 
 gulp.task('default', ['sass', 'jshint'], function() {
 
