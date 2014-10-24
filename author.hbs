@@ -1,9 +1,6 @@
 {{!< default}}
-{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 
-{{! The big featured header }}
-
-{{! Everything inside the #author tags pulls data from the author }}
+{{! Featured header }}
 {{#author}}
   <header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
     <nav class="main-nav overlay clearfix">
@@ -28,10 +25,9 @@
   </section>
 {{/author}}
 
-{{! The main content area on the homepage }}
 <main class="content" role="main">
 
-  {{! The tag below includes the post loop - partials/loop.hbs }}
+  {{! Include the post loop - partials/loop.hbs }}
   {{> "loop"}}
 
 </main>

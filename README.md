@@ -1,6 +1,6 @@
 # Abstraction
 
-A project scaffold for building  [Ghost](http://github.com/tryghost/ghost/) themes using gulp, node-sass, & autoprefixer
+A project scaffold for building [Ghost](http://github.com/tryghost/ghost/) themes using Gulp, LibSass, & Autoprefixer
 
 [Demo Site](http://abstraction.ghost.io)
 
@@ -8,7 +8,7 @@ A project scaffold for building  [Ghost](http://github.com/tryghost/ghost/) them
 
 - Gulp integration
 
-- Blazing fast Node-Sass
+- Blazing fast Lib-Sass
 
 - The amazing power of Autoprefixer
 
