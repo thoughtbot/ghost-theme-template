@@ -1,14 +1,6 @@
 {{!< default}}
 
-<header class="post-header">
-	<a class="blog-logo" href="{{@blog.url}}">
-		{{#if @blog.logo}}
-			<img src="{{@blog.logo}}" alt="Blog Logo" />
-		{{else}}
-			<span class="blog-title">{{@blog.title}}</span>
-		{{/if}}
-	</a>
-</header>
+{{> "site-header"}}
 
 <main class="content" role="main">
 

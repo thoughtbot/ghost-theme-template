@@ -4,13 +4,16 @@
 // ========= Typography & Metrics =========
 
 // This is the default html and body font-size for the base em value.
+
 $rem-base: 16px;
 
 // Fonts size and line height defaults for our calculations
+
 $base-font-size: 1em;
 $base-line-height: 1.6;
 
 // Font sizes are then abstracted to global spacing behaviors
+
 $base-spacing-unit: $base-line-height;
 $base-font-size: 16px;
 
@@ -46,15 +49,12 @@ $h5-font-size: rem-calc(18);
 $h6-font-size: rem-calc(16);
 
 // Small Print
-
 $small-font-size: 75%;
 
 // Indentation for dl, ul, blockquote
-
 $indent-amount: 1em;
 
 // Fonts
-
 $base-font-family: 'Merriweather', sans-serif;
 $header-font-family: 'Open Sans', sans-serif;
 $header-font-weight: 300;

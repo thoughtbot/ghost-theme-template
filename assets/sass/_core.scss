@@ -40,12 +40,15 @@ main {
 a {
 	color: $primary;
 	background: transparent;
+
 	&:hover, &:focus, &:active {
 		color: $primary-alt;
 	}
+
 	&:active, &:hover {
 		outline: 0;
 	}
+
 	&:focus {
 		outline: thin dotted;
 	}
@@ -64,7 +67,8 @@ img {
 	max-width: 100%;
 }
 
-img, a img {
+img,
+a img {
 	border: 0;
 }
 
@@ -132,21 +136,19 @@ table {
 
 // ========= Site Head =========
 
-.site-head {
-	position: relative;
-	width: 100%;
-	text-align: center;
-	color: $base-bg;
-	background: $secondary no-repeat center center;
-	background-size: cover;
+.site-header {
 	@include clearfix;
-
-	.site-head-content {
-		margin: 4rem 0;
-	}
+	background-size: cover;
+	background: $secondary no-repeat center center;
+	color: $base-bg;
+	padding: 4rem 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
 
 	.blog-logo {
 		text-decoration: none;
+
 		img {
 			display: block;
 			width: auto;
@@ -179,6 +181,7 @@ table {
 	margin: 4rem auto;
 	width: 90%;
 	max-width: rem-calc(700);
+
 	@media #{$small} {
 		width: 80%;
 	}
@@ -193,7 +196,6 @@ table {
 .post-excerpt {
 
 	p {
-
 	}
 }
 
@@ -201,11 +203,12 @@ table {
 }
 
 .post-meta {
+	color: $tertiary;
 	display: inline-block;
-	margin: 0 0 0.25rem 0;
 	font-family: $base-font-family;
 	font-size: 1rem;
-	color: $tertiary;
+	margin: 0 0 0.25rem 0;
+
 	a {
 		color: $tertiary;
 
@@ -276,9 +279,9 @@ table {
 
 	img {
 		display: block;
-		max-width: 100%;
 		height: auto;
 		margin: 0 auto;
+		max-width: 100%;
 		padding: 1.6em 0;
 	}
 }
@@ -286,18 +289,17 @@ table {
 // Post Footer
 
 .post-footer {
-	position: relative;
 	padding: 4rem 0;
+	position: relative;
 }
-
 
 // Author Meta
 
 ul.author-meta {
 	@include lining;
-	padding: 0;
-	font-style: italic;
 	color: $tertiary;
+	font-style: italic;
+	padding: 0;
 
 	li {
 
@@ -313,9 +315,9 @@ ul.author-meta {
 }
 
 .post-footer .share a {
+	color: $tertiary;
 	display: inline-block;
 	margin: 1rem 1.6rem 1.6rem 0;
-	color: $tertiary;
 	text-decoration: none;
 
 	&:before {
@@ -348,10 +350,10 @@ ul.author-meta {
 }
 
 .tag-archive-header {
-	text-align: center;
-	max-width: rem-calc(700);
 	margin: 4rem auto;
+	max-width: rem-calc(700);
 	position: relative;
+	text-align: center;
 }
 
 .archive-template .blog-title {
@@ -375,18 +377,19 @@ ul.author-meta {
 // ========= Pagination =========
 
 .pagination {
-	position: relative;
-	width: 80%;
-	max-width: rem-calc(700);
-	margin: 4rem auto;
-	font-family: $header-font-family;
 	color: $tertiary;
+	font-family: $header-font-family;
+	margin: 4rem auto;
+	max-width: rem-calc(700);
+	position: relative;
 	text-align: center;
+	width: 80%;
 }
 
 .pagination a {
 	color: $tertiary;
 	text-decoration: underline;
+
 	&:hover {
 		color: $primary-alt;
 	}
@@ -402,9 +405,10 @@ ul.author-meta {
 // ========= Global Footer Styles =========
 
 .site-footer {
-	position: relative;
-	font-family: $header-font-family;
 	color: $tertiary;
+	font-family: $header-font-family;
+	padding-bottom: 4rem;
+	position: relative;
 	text-align: center;
 
 	a {
@@ -421,8 +425,8 @@ ul.author-meta {
 		text-decoration: none;
 
 		&:before {
-			text-decoration: none;
 			padding-right: 0.5em;
+			text-decoration: none;
 		}
 
 		span {
