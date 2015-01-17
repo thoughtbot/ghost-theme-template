@@ -1,21 +1,21 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Merriweather:400,400italic,700,700italic);
 h1 {
-  font-size: 2.75rem; }
+  font-size: 2.75em; }
 
 h2 {
-  font-size: 2.3125rem; }
+  font-size: 2.3125em; }
 
 h3 {
-  font-size: 1.6875rem; }
+  font-size: 1.6875em; }
 
 h4 {
-  font-size: 1.4375rem; }
+  font-size: 1.4375em; }
 
 h5 {
-  font-size: 1.125rem; }
+  font-size: 1.125em; }
 
 h6 {
-  font-size: 1rem; }
+  font-size: 1em; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #4b4b4b;
@@ -28,7 +28,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 p {
-  line-height: 1.6; }
+  line-height: 1.75; }
 
 pre {
   white-space: pre-wrap; }
@@ -84,7 +84,7 @@ code, kbd, pre, samp {
 
 pre > code {
   display: block;
-  padding: 2rem;
+  padding: 2em;
   background-color: #eaeaea; }
 
 label, select {
@@ -169,8 +169,8 @@ body {
   -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
   font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 1em;
+  line-height: 1.75;
   margin: 0; }
 
 main {
@@ -218,7 +218,7 @@ table {
   background-size: cover;
   background: #4b4b4b no-repeat center center;
   color: whitesmoke;
-  padding: 4rem 0;
+  padding: 4em 0;
   position: relative;
   text-align: center;
   width: 100%; }
@@ -240,10 +240,10 @@ table {
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke; }
   .site-header h2.blog-description {
-    font-size: 1.125rem;
+    font-size: 1.125em;
     font-weight: 300;
     font-family: 'Merriweather', sans-serif;
-    max-width: 43.75rem;
+    max-width: 43.75em;
     margin-left: auto;
     margin-right: auto;
     color: whitesmoke; }
@@ -254,9 +254,9 @@ table {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  margin: 4rem auto;
+  margin: 4em auto;
   width: 90%;
-  max-width: 43.75rem; }
+  max-width: 43.75em; }
   @media only screen and (min-width: 768px) {
     .post {
       width: 80%; } }
@@ -265,15 +265,15 @@ table {
   color: #9b9b9b;
   display: inline-block;
   font-family: 'Merriweather', sans-serif;
-  font-size: 1rem;
-  margin: 0 0 0.25rem 0; }
+  font-size: 1em;
+  margin: 0 0 0.25em 0; }
   .post-meta a {
     color: #9b9b9b; }
     .post-meta a:hover {
       color: #982d21; }
 
 .post-template .post-header {
-  margin-bottom: 4rem;
+  margin-bottom: 4em;
   text-align: center; }
   .post-template .post-header a.blog-logo {
     display: block; }
@@ -290,7 +290,7 @@ table {
   padding: 1.6em 0; }
 
 .post-footer {
-  padding: 4rem 0;
+  padding: 4em 0;
   position: relative; }
 
 ul.author-meta {
@@ -310,7 +310,7 @@ ul.author-meta {
 .post-footer .share a {
   color: #9b9b9b;
   display: inline-block;
-  margin: 1rem 1.6rem 1.6rem 0;
+  margin: 1em 1.6em 1.6em 0;
   text-decoration: none; }
   .post-footer .share a:before {
     text-decoration: none; }
@@ -321,18 +321,18 @@ ul.author-meta {
 
 .archive-template .site-head {
   height: auto;
-  padding-bottom: 5rem; }
+  padding-bottom: 5em; }
 
 .archive-template .site-head a {
   color: whitesmoke; }
 
 .archive-template .blog-logo {
   display: block;
-  margin-top: 5rem; }
+  margin-top: 5em; }
 
 .tag-archive-header {
-  margin: 4rem auto;
-  max-width: 43.75rem;
+  margin: 4em auto;
+  max-width: 43.75em;
   position: relative;
   text-align: center; }
 
@@ -341,17 +341,17 @@ ul.author-meta {
 
 .gist table {
   margin: 0;
-  font-size: 1.4rem; }
+  font-size: 1.4em; }
 
 .gist .line-number {
   min-width: 25px;
-  font-size: 1.1rem; }
+  font-size: 1.1em; }
 
 .pagination {
   color: #9b9b9b;
   font-family: 'Open Sans', sans-serif;
-  margin: 4rem auto;
-  max-width: 43.75rem;
+  margin: 4em auto;
+  max-width: 43.75em;
   position: relative;
   text-align: center;
   width: 80%; }
@@ -365,7 +365,7 @@ ul.author-meta {
 .site-footer {
   color: #9b9b9b;
   font-family: 'Open Sans', sans-serif;
-  padding-bottom: 4rem;
+  padding-bottom: 4em;
   position: relative;
   text-align: center; }
   .site-footer a {
@@ -381,15 +381,3 @@ ul.author-meta {
       text-decoration: none; }
     .site-footer .subscribe span {
       text-decoration: underline; }
-
-@media only screen { }
-
-@media only screen and (min-width: 768px) { }
-
-@media only screen and (min-width:1280px) { }
-
-@media only screen and (min-width:1440px) { }
-
-@media only screen and (orientation: landscape) { }
-
-@media only screen and (orientation: portrait) { }

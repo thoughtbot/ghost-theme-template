@@ -1,30 +1,6 @@
 // Project Settings
 // ============================================================
 
-// ========= Typography & Metrics =========
-
-// This is the default html and body font-size for the base em value.
-
-$rem-base: 16px;
-
-// Fonts size and line height defaults for our calculations
-
-$base-font-size: 1em;
-$base-line-height: 1.6;
-
-// Font sizes are then abstracted to global spacing behaviors
-
-$base-spacing-unit: $base-line-height;
-$base-font-size: 16px;
-
-// ========= Conversion Functions =========
-
-@import "libs/functions";
-
-// ========= Grid Variables =========
-
-$base-container-width: 43.75rem;
-
 // ========= Media Queries =========
 
 $small-screen: 768px !default;
@@ -41,12 +17,20 @@ $portrait: "only screen and (orientation: portrait)" !default;
 
 // ========= Core Settings =========
 
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
-$h4-font-size: rem-calc(23);
-$h5-font-size: rem-calc(18);
-$h6-font-size: rem-calc(16);
+// ========= Typography & Metrics =========
+
+$base-font-size: 1em;
+$base-line-height: 1.75;
+
+$base-spacing-unit: ($base-line-height * 1em);
+$base-container-width: em-calc(800);
+
+$h1-font-size: em-calc(44);
+$h2-font-size: em-calc(37);
+$h3-font-size: em-calc(27);
+$h4-font-size: em-calc(23);
+$h5-font-size: em-calc(18);
+$h6-font-size: em-calc(16);
 
 // Small Print
 $small-font-size: 75%;
@@ -82,19 +66,19 @@ $base-factor-modifier: 0.5;
 
 // Core Spacing Variables
 
-$coral: 1rem;
-$reef: 2rem;
-$island: 4rem;
-$continent: 8rem;
+$coral: 1em;
+$reef: 2em;
+$island: 4em;
+$continent: 8em;
 
 $render-helper-classes: true;
 
 // Transition Variables
 
-$global-transition-speed: 150ms;
-$global-transition-function: ease;
+$base-transition-speed: 150ms;
+$base-transition-function: ease;
 
 // Border Variables
 
-$global-radius: 2px;
-$global-border-width: 1px;
+$base-radius: 2px;
+$base-border-width: 1px;

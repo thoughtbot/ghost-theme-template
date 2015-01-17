@@ -20,7 +20,7 @@
 	}
 }
 
-@mixin transition($property: all, $speed: $global-transition-speed, $function: $global-transition-function) {
+@mixin transition($property: all, $speed: $base-transition-speed, $function: $base-transition-function) {
 	transition: $property $speed $function;
 }
 
@@ -41,7 +41,7 @@
 
 	@if $type == ol {
 
-		// bullets are removed for inline ul but not for ol!
+		// bullets are emoved for inline ul but not for ol!
 
 		li {
 			display: inline-block;
