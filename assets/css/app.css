@@ -213,41 +213,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-@font-face {
-  font-family: 'icons';
-  src: url('../fonts/icons.eot');
-  src: url('../fonts/icons.eot?#iefix') format('embedded-opentype'), url('../fonts/icons.woff') format('woff'), url('../fonts/icons.ttf') format('truetype'), url('../fonts/icons.svg#icons') format('svg');
-  font-weight: normal;
-  font-style: normal; }
-
-.icon-ghost:before, .icon-feed:before, .icon-twitter:before, .icon-google-plus:before, .icon-facebook:before {
-  font-family: 'icons';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  text-decoration: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.icon-ghost:before {
-  content: "\e000"; }
-
-.icon-feed:before {
-  content: "\e001"; }
-
-.icon-twitter:before {
-  content: "\e002";
-  font-size: 1.1em; }
-
-.icon-google-plus:before {
-  content: "\e003"; }
-
-.icon-facebook:before {
-  content: "\e004"; }
-
 .site-header {
   zoom: 1;
   background-size: cover;
@@ -416,13 +381,6 @@ ul.author-meta {
       text-decoration: none; }
     .site-footer .subscribe span {
       text-decoration: underline; }
-
-.poweredby .icon-ghost {
-  font-weight: 700;
-  text-decoration: none; }
-  .poweredby .icon-ghost:before {
-    font-size: 1rem;
-    margin-right: 0.2em; }
 
 @media only screen { }
 
