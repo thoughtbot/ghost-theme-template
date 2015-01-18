@@ -35,7 +35,7 @@ $small-font-size: 75%;
 // Indentation for dl, ul, blockquote
 $indent-amount: 1em;
 
-// Fonts
+// Font Families
 $base-font-family: 'Merriweather', sans-serif;
 $header-font-family: 'Open Sans', sans-serif;
 $header-font-weight: 300;
@@ -49,8 +49,11 @@ $tertiary: #9b9b9b;
 
 // Primary roles
 
-$base-color: #2b2b2b;
+$base-font-color: #2b2b2b;
+$alt-font-color: $tertiary;
 $base-background-color: whitesmoke;
+$base-link-color: $primary;
+$hover-link-color: $primary-alt;
 $heading-color: $secondary;
 $alert: red;
 $success: green;
@@ -64,5 +67,5 @@ $base-transition-function: ease;
 
 $base-border-radius: 2px;
 $base-border-width: 1px;
-$base-border-color: $tertiary;
+$base-border-color: $secondary;
 $base-border: $base-border-width solid $base-border-color;

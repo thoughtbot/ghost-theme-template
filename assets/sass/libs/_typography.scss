@@ -84,7 +84,7 @@ q {
 }
 
 blockquote {
-	border-left: 0.25 solid $secondary;
+	border-left: 0.25 solid $base-border-color;
 	line-height: normal;
 	margin-left: $indent-amount;
 	margin-right: $indent-amount;
@@ -124,5 +124,5 @@ code, kbd, pre, samp {
 pre > code {
 	display: block;
 	padding: 2em;
-	background-color: mix($base-background-color, $base-color,95%);
+	background-color: mix($base-background-color, $base-font-color,95%);
 }

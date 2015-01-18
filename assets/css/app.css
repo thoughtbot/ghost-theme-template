@@ -252,7 +252,7 @@ table {
   font-size: 1em;
   margin: 0 0 0.25em 0; }
   .post-meta a {
-    color: #9b9b9b; }
+    color: inherit; }
     .post-meta a:hover {
       color: #d34836; }
 
@@ -288,20 +288,15 @@ ul.author-meta {
   ul.author-meta li {
     display: inline; }
     ul.author-meta li a {
-      color: #9b9b9b;
+      color: inherit;
       text-decoration: underline; }
       ul.author-meta li a:hover {
         color: #d34836; }
 
 .post-footer .share a {
-  color: #9b9b9b;
+  color: inherit;
   display: inline-block;
-  margin: 1em 1.6em 1.6em 0;
-  text-decoration: none; }
-  .post-footer .share a:before {
-    text-decoration: none; }
-  .post-footer .share a span {
-    text-decoration: underline; }
+  margin: 1em 1.6em 1.6em 0; }
   .post-footer .share a:hover {
     color: #d34836; }
 
@@ -343,7 +338,7 @@ ul.author-meta {
   width: 80%; }
 
 .pagination a {
-  color: #9b9b9b;
+  color: inherit;
   text-decoration: underline; }
   .pagination a:hover {
     color: #d34836; }
@@ -355,15 +350,10 @@ ul.author-meta {
   position: relative;
   text-align: center; }
   .site-footer a {
-    color: #9b9b9b;
+    color: inherit;
     text-decoration: underline; }
     .site-footer a:hover {
       color: #d34836; }
   .site-footer .subscribe {
     text-align: center;
     text-decoration: none; }
-    .site-footer .subscribe:before {
-      padding-right: 0.5em;
-      text-decoration: none; }
-    .site-footer .subscribe span {
-      text-decoration: underline; }

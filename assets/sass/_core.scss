@@ -23,7 +23,7 @@ html {
 
 body {
 	background-color: $base-background-color;
-	color: $base-color;
+	color: $base-font-color;
 	font-family: $base-font-family;
 	font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	font-size: $base-font-size;
@@ -38,11 +38,11 @@ main {
 // Link Styles
 
 a {
-	color: $primary;
+	color: $base-link-color;
 	background: transparent;
 
 	&:hover, &:focus, &:active {
-		color: $primary-alt;
+		color: $hover-link-color;
 	}
 
 	&:active, &:hover {
@@ -150,17 +150,17 @@ table {
 }
 
 .post-meta {
-	color: $tertiary;
+	color: $alt-font-color;
 	display: inline-block;
 	font-family: $base-font-family;
 	font-size: 1em;
 	margin: 0 0 0.25em 0;
 
 	a {
-		color: $tertiary;
+		color: inherit;
 
 		&:hover {
-			color: $primary;
+			color: $base-link-color;
 		}
 	}
 
@@ -244,7 +244,7 @@ table {
 
 ul.author-meta {
 	@include clearfix;
-	color: $tertiary;
+	color: $alt-font-color;
 	font-style: italic;
 	padding: 0;
 
@@ -252,32 +252,23 @@ ul.author-meta {
 		display: inline;
 
 		a {
-			color: $tertiary;
+			color: inherit;
 			text-decoration: underline;
 
 			&:hover {
-				color: $primary;
+				color: $base-link-color;
 			}
 		}
 	}
 }
 
 .post-footer .share a {
-	color: $tertiary;
+	color: inherit;
 	display: inline-block;
 	margin: 1em 1.6em 1.6em 0;
-	text-decoration: none;
-
-	&:before {
-		text-decoration: none;
-	}
-
-	span {
-		text-decoration: underline;
-	}
 
 	&:hover {
-		color: $primary;
+		color: $base-link-color;
 	}
 }
 
@@ -325,7 +316,7 @@ ul.author-meta {
 // ========= Pagination =========
 
 .pagination {
-	color: $tertiary;
+	color: $alt-font-color;
 	font-family: $header-font-family;
 	margin: 4em auto;
 	max-width: em-calc(700);
@@ -335,11 +326,11 @@ ul.author-meta {
 }
 
 .pagination a {
-	color: $tertiary;
+	color: inherit;
 	text-decoration: underline;
 
 	&:hover {
-		color: $primary;
+		color: $base-link-color;
 	}
 }
 
@@ -353,33 +344,24 @@ ul.author-meta {
 // ========= Global Footer Styles =========
 
 .site-footer {
-	color: $tertiary;
+	color: $alt-font-color;
 	font-family: $header-font-family;
 	padding-bottom: 4em;
 	position: relative;
 	text-align: center;
 
 	a {
-		color: $tertiary;
+		color: inherit;
 		text-decoration: underline;
 
 		&:hover {
-			color: $primary;
+			color: $base-link-color;
 		}
 	}
 
 	.subscribe {
 		text-align: center;
 		text-decoration: none;
-
-		&:before {
-			padding-right: 0.5em;
-			text-decoration: none;
-		}
-
-		span {
-			text-decoration: underline;
-		}
 	}
 }
 
