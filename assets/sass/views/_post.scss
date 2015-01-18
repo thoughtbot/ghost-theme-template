@@ -1,5 +1,17 @@
 // ========= Single Posts =========
 
+.post {
+  word-break: break-word;
+  hyphens: auto;
+  margin: 4em auto;
+  width: 90%;
+  max-width: em-calc(700);
+
+  @media #{$small} {
+    width: 80%;
+  }
+}
+
 // Post Header
 
 .post-template {
@@ -69,6 +81,12 @@ ul.author-meta {
       }
     }
   }
+}
+
+.author-thumb {
+  float: left;
+  margin-right: $base-spacing-unit;
+  width: 3em;
 }
 
 .post-footer .share a {

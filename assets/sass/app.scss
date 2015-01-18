@@ -17,19 +17,16 @@
 @import "libs/typography";
 @import "libs/forms";
 
-// Core Imports
-
-@import "core";
-
 // View Imports
 
 @import "views/partials/site-header";
 
 @import "views/default";
 
-@import "views/posts";
 @import "views/post";
+@import "views/posts";
 @import "views/tag";
+@import "views/author";
 
 // Media Quieries
 

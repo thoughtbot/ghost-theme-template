@@ -1,6 +1,15 @@
 {{! The site header }}
-<header class="site-header">
-  {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-  <h1 class="blog-title">{{@blog.title}}</h1>
-  <h2 class="blog-description">{{@blog.description}}</h2>
+
+<header class="site-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
+  {{#if @blog.logo}}
+    <a class="blog-logo" href="{{@blog.url}}">
+      <img src="{{@blog.logo}}" alt="Blog Logo" />
+    </a>
+  {{/if}}
+  <h1 class="blog-title">
+    {{@blog.title}}
+  </h1>
+  <h2 class="blog-description">
+    {{@blog.description}}
+  </h2>
 </header>

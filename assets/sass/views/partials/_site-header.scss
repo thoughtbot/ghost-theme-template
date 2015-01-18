@@ -2,8 +2,8 @@
 
 .site-header {
   @include clearfix;
+  background: $secondary no-repeat center top;
   background-size: cover;
-  background: $secondary no-repeat center center;
   color: $base-background-color;
   padding: 4em 0;
   position: relative;

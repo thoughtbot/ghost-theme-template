@@ -21,16 +21,17 @@
     <h1 class="author-title">{{name}}</h1>
     <p class="author-bio">{{bio}}</p>
     <div class="author-meta">
-      {{#if location}}<span class="author-location">{{location}}</span>{{/if}}
-      {{#if website}}<span class="author-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+      {{#if location}}
+        <span class="author-location">{{location}}</span>
+      {{/if}}
+      {{#if website}}
+        <span class="author-link"><a href="{{website}}">{{website}}</a></span>
+      {{/if}}
       <span class="author-stats"> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
     </div>
   </section>
 {{/author}}
-
 <main class="content" role="main">
-
   {{! Include the post loop - partials/loop.hbs }}
   {{> "loop"}}
-
 </main>

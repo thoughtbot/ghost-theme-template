@@ -1,14 +1,15 @@
 {{!< default}}
 
 <header class="site-header" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
-		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-		<h1 class="blog-title">{{@blog.title}}</h1>
-		<h2 class="blog-description">{{@blog.description}}</h2>
+    {{#if @blog.logo}}
+      <a class="blog-logo" href="{{@blog.url}}">
+        <img src="{{@blog.logo}}" alt="Blog Logo" />
+      </a>
+    {{/if}}
+    <h1 class="blog-title">{{@blog.title}}</h1>
+    <h2 class="blog-description">{{@blog.description}}</h2>
 </header>
-
 <main id="content" class="content" role="main">
-
-    {{! Include the post loop - partials/loop.hbs }}
-    {{> "loop"}}
-
+  {{! Include the post loop - partials/loop.hbs }}
+  {{> "loop"}}
 </main>

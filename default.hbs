@@ -7,29 +7,21 @@
   <meta name="description" content="{{meta_description}}" />
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
   <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" />
-
   {{ghost_head}}
-
 </head>
 <body class="{{body_class}}">
-
   {{! Render page content here }}
   {{{body}}}
-
   <footer class="site-footer">
-    <a class="subscribe" href="{{@blog.url}}/rss/"><span class="tooltip">Subscribe!</span></a>
+    <a class="subscribe" href="{{@blog.url}}/rss/">Subscribe!</a>
     <div class="inner">
        <section class="copyright">All content copyright <a href="{{@blog.url}}/">{{@blog.title}}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
        <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
     </div>
   </footer>
-
   {{ghost_foot}}
-
   <script type="text/javascript" src="{{asset "js/app.js"}}"></script>
-
 </body>
 </html>
