@@ -1,16 +1,25 @@
 {{!< default}}
 
-{{> "site-header"}}
-
 {{#author}}
+  <header class="site-header author-header
+    {{#if cover}}
+      " style="background-image: url({{cover}})
+    {{else}}
+      {{#if @blog.cover}}
+        " style="background-image: url({{@blog.cover}})
+      {{else}}
+        no-cover
+      {{/if}}
+    {{/if}}">
+  </header>
   <section class="author-profile inner">
     {{#if image}}
-    <figure class="author-image">
-      <div class="img" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></div>
-    </figure>
+      <figure class="author-image">
+        <img src="{{image}}" alt="{{name}}'s Picture">
+      </figure>
     {{/if}}
     <h1 class="author-title">{{name}}</h1>
-    <h2 class="author-bio">{{bio}}</h2>
+    <p class="author-bio">{{bio}}</p>
     <div class="author-meta">
       {{#if location}}<span class="author-location">{{location}}</span>{{/if}}
       {{#if website}}<span class="author-link"><a href="{{website}}">{{website}}</a></span>{{/if}}

@@ -1,0 +1,20 @@
+// ========= Author =========
+
+.author-header {
+  padding-top: 20%;
+}
+
+.author-profile {
+  @extend .post;
+  text-align: center;
+
+  .author-image {
+    position: relative;
+    max-width: 10em;
+    margin: -10em auto 0 auto;
+
+    img {
+      display: block;
+    }
+  }
+}
