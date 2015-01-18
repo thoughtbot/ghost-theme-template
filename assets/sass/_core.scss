@@ -22,7 +22,7 @@ html {
 }
 
 body {
-	background-color: $base-bg;
+	background-color: $base-background-color;
 	color: $base-color;
 	font-family: $base-font-family;
 	font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
@@ -87,7 +87,7 @@ table {
 	@include clearfix;
 	background-size: cover;
 	background: $secondary no-repeat center center;
-	color: $base-bg;
+	color: $base-background-color;
 	padding: 4em 0;
 	position: relative;
 	text-align: center;
@@ -106,7 +106,7 @@ table {
 	h1.blog-title {
 		font-weight: bold;
 		font-family: $header-font-family;
-		color: $base-bg;
+		color: $base-background-color;
 	}
 
 	h2.blog-description {
@@ -116,7 +116,7 @@ table {
 		max-width: em-calc(700);
 		margin-left: auto;
 		margin-right: auto;
-		color: $base-bg;
+		color: $base-background-color;
 	}
 }
 
@@ -288,7 +288,7 @@ ul.author-meta {
 }
 
 .archive-template .site-head a {
-	color: $base-bg;
+	color: $base-background-color;
 }
 
 .archive-template .blog-logo {

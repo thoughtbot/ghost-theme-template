@@ -187,7 +187,7 @@ a {
   color: #d34836;
   background: transparent; }
   a:hover, a:focus, a:active {
-    color: #982d21; }
+    color: tint(#d34836, 30%); }
   a:active, a:hover {
     outline: 0; }
   a:focus {
@@ -270,7 +270,7 @@ table {
   .post-meta a {
     color: #9b9b9b; }
     .post-meta a:hover {
-      color: #982d21; }
+      color: tint(#d34836, 30%); }
 
 .post-template .post-header {
   margin-bottom: 4em;
@@ -305,7 +305,7 @@ ul.author-meta {
     color: #9b9b9b;
     text-decoration: underline; }
     ul.author-meta li a:hover {
-      color: #982d21; }
+      color: tint(#d34836, 30%); }
 
 .post-footer .share a {
   color: #9b9b9b;
@@ -360,7 +360,7 @@ ul.author-meta {
   color: #9b9b9b;
   text-decoration: underline; }
   .pagination a:hover {
-    color: #982d21; }
+    color: tint(#d34836, 30%); }
 
 .site-footer {
   color: #9b9b9b;
@@ -372,7 +372,7 @@ ul.author-meta {
     color: #9b9b9b;
     text-decoration: underline; }
     .site-footer a:hover {
-      color: #982d21; }
+      color: tint(#d34836, 30%); }
   .site-footer .subscribe {
     text-align: center;
     text-decoration: none; }
