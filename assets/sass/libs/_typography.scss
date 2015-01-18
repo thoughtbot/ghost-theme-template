@@ -3,7 +3,18 @@
 
 // ========= Default Sizing and Spacing =========
 
-// h1, h2, h3, h4, h5, h6
+h1, h2, h3, h4, h5, h6 {
+	color: $heading-color;
+	font-family: $header-font-family;
+	font-weight: $header-font-weight;
+	line-height: 1.25;
+
+	small {
+		font-size: $small-font-size;
+		opacity: 0.8;
+		line-height: 0;
+	}
+}
 
 h1 {
 	font-size: $h1-font-size;
@@ -29,18 +40,6 @@ h6 {
 	font-size: $h6-font-size;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: $heading-color;
-	font-family: $header-font-family;
-	font-weight: $header-font-weight;
-	line-height: 1.25;
-
-	small {
-		font-size: $small-font-size;
-		opacity: 0.8;
-		line-height: 0;
-	}
-}
 
 // p, pre, label
 
@@ -126,5 +125,4 @@ pre > code {
 	display: block;
 	padding: 2em;
 	background-color: mix($base-background-color, $base-color,95%);
-
 }

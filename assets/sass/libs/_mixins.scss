@@ -6,65 +6,10 @@
 // ========= Base Mixins =========
 
 @mixin clearfix {
-	zoom: 1;
 
 	&:before, &:after {
-		content: "\0020";
-		display: table;
-		height: 0;
-		overflow: hidden;
-	}
-
-	&:after {
 		clear: both;
-	}
-}
-
-@mixin transition($property: all, $speed: $base-transition-speed, $function: $base-transition-function) {
-	transition: $property $speed $function;
-}
-
-// ========= Lining Lists =========
-
-// Lining declares an inline list for ul, ol and dl
-
-@mixin lining($type: ul, $after: 1em) {
-
-	@if $type == ul {
-		list-style: none;
-
-		li {
-			display: inline-block;
-			margin-right: $after;
-		}
-	}
-
-	@if $type == ol {
-
-		// bullets are emoved for inline ul but not for ol!
-
-		li {
-			display: inline-block;
-			margin-right: $after;
-		}
-	}
-
-	@if $type == dl {
-
-		dt,dd {
-			display: inline;
-			margin: 0;
-		}
-
-		dt,dd {
-
-			& + dt {
-
-				&:before {
-					content: "\A";
-					white-space: pre;
-				}
-			}
-		}
+		content: "";
+		display: table;
 	}
 }

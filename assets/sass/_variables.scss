@@ -43,7 +43,7 @@ $header-font-weight: 300;
 // ========= Color Settings =========
 
 $primary: #d34836;
-$primary-alt: tint($primary, 30%);
+$primary-alt: darken($primary, 10);
 $secondary: #4b4b4b;
 $tertiary: #9b9b9b;
 

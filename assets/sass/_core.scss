@@ -160,7 +160,7 @@ table {
 		color: $tertiary;
 
 		&:hover {
-			color: $primary-alt;
+			color: $primary;
 		}
 	}
 
@@ -243,19 +243,20 @@ table {
 // Author Meta
 
 ul.author-meta {
-	@include lining;
+	@include clearfix;
 	color: $tertiary;
 	font-style: italic;
 	padding: 0;
 
 	li {
+		display: inline;
 
 		a {
 			color: $tertiary;
 			text-decoration: underline;
 
 			&:hover {
-				color: $primary-alt;
+				color: $primary;
 			}
 		}
 	}
@@ -338,7 +339,7 @@ ul.author-meta {
 	text-decoration: underline;
 
 	&:hover {
-		color: $primary-alt;
+		color: $primary;
 	}
 }
 
@@ -363,7 +364,7 @@ ul.author-meta {
 		text-decoration: underline;
 
 		&:hover {
-			color: $primary-alt;
+			color: $primary;
 		}
 	}
 
