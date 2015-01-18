@@ -1,6 +1,22 @@
 // Typography
 // ============================================================
 
+*, *:before, *:after { box-sizing: border-box; }
+
+html {
+	font-size: 100%;
+}
+
+body {
+	background-color: $base-background-color;
+	color: $base-font-color;
+	font-family: $base-font-family;
+	font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	margin: 0;
+}
+
 // ========= Default Sizing and Spacing =========
 
 h1, h2, h3, h4, h5, h6 {
@@ -40,6 +56,24 @@ h6 {
 	font-size: $h6-font-size;
 }
 
+// Links
+
+a {
+	color: $base-link-color;
+	background: transparent;
+
+	&:hover, &:focus, &:active {
+		color: $hover-link-color;
+	}
+
+	&:active, &:hover {
+		outline: 0;
+	}
+
+	&:focus {
+		outline: thin dotted;
+	}
+}
 
 // p, pre, label
 
@@ -95,6 +129,10 @@ blockquote {
 	}
 }
 
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
 sub, sup {
 	font-size: 75%;
 	line-height: 0;
@@ -125,4 +163,29 @@ pre > code {
 	display: block;
 	padding: 2em;
 	background-color: mix($base-background-color, $base-font-color,95%);
+}
+
+// Images, Figures, Rules & Tables
+
+hr {
+	height: 0;
+}
+
+img {
+	display: inline-block;
+	max-width: 100%;
+}
+
+img,
+a img {
+	border: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
