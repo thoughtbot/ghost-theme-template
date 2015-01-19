@@ -1,8 +1,17 @@
 {{!< default}}
 
 {{> "site-header"}}
-{{! The main content area on the homepage }}
 <main class="content" role="main">
-  {{! The tag below includes the post loop - partials/loop.hbs }}
+  <header class="tag-header">
+    <h1 class="tag-title">{{tag.name}}</h1>
+    {{#if tag.description}}
+      <h2 class="tag-description">
+        {{tag.description}}
+      </h2>
+    {{else}}
+      A {{pagination.total}} post collection
+    {{/if}}
+  </header>
+  {{! Includes the post loop - partials/loop.hbs }}
   {{> "loop"}}
 </main>

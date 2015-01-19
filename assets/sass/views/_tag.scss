@@ -1,26 +1,13 @@
-// ========= Tag Archive =========
+// ========= Tag =========
 
-.archive-template .site-head {
-  height: auto;
-  padding-bottom: 5em;
-}
-
-.archive-template .site-head a {
-  color: $base-background-color;
-}
-
-.archive-template .blog-logo {
-  display: block;
-  margin-top: 5em;
-}
-
-.tag-archive-header {
+.tag-header {
+  word-break: break-word;
+  hyphens: auto;
   margin: 4em auto;
+  width: 90%;
   max-width: em-calc(700);
-  position: relative;
-  text-align: center;
-}
 
-.archive-template .blog-title {
-  display: inline-block;
+  @media #{$small} {
+    width: 80%;
+  }
 }

@@ -205,11 +205,11 @@ button[disabled], html input[disabled] {
       display: block;
       width: auto;
       margin: 0 auto; }
-  .site-header h1.blog-title {
+  .site-header .blog-title, .site-header .page-title {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke; }
-  .site-header h2.blog-description {
+  .site-header .blog-description, .site-header .page-description {
     font-size: 1.125em;
     font-weight: 300;
     font-family: 'Merriweather', sans-serif;
@@ -235,6 +235,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   text-decoration: underline; }
   .pagination a:hover {
     color: #d34836; }
+
+.page-number {
+  margin: 0 1.75em; }
 
 .site-footer {
   color: #9b9b9b;
@@ -263,16 +266,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   @media only screen and (min-width: 768px) {
     .post, .author-profile {
       width: 80%; } }
-
-.post-template .post-header {
-  margin-bottom: 4em;
-  text-align: center; }
-  .post-template .post-header a.blog-logo {
-    display: block; }
-  .post-template .post-header img {
-    display: block;
-    width: auto;
-    margin: 0 auto; }
 
 .post-content img {
   display: block;
@@ -324,25 +317,18 @@ ul.author-meta {
     .post-meta a:hover {
       color: #d34836; }
 
-.archive-template .site-head {
-  height: auto;
-  padding-bottom: 5em; }
-
-.archive-template .site-head a {
-  color: whitesmoke; }
-
-.archive-template .blog-logo {
-  display: block;
-  margin-top: 5em; }
-
-.tag-archive-header {
+.tag-header {
+  word-break: break-word;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
   margin: 4em auto;
-  max-width: 43.75em;
-  position: relative;
-  text-align: center; }
-
-.archive-template .blog-title {
-  display: inline-block; }
+  width: 90%;
+  max-width: 43.75em; }
+  @media only screen and (min-width: 768px) {
+    .tag-header {
+      width: 80%; } }
 
 .author-header {
   padding-top: 20%; }

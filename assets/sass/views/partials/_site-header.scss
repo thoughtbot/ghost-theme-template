@@ -20,13 +20,13 @@
     }
   }
 
-  h1.blog-title {
+  .blog-title {
     font-weight: bold;
     font-family: $header-font-family;
     color: $base-background-color;
   }
 
-  h2.blog-description {
+  .blog-description {
     font-size: 1.125em;
     font-weight: 300;
     font-family: $base-font-family;

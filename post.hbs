@@ -1,11 +1,13 @@
 {{!< default}}
 
+{{> "site-header"}}
 {{#post}}
-  {{> "site-header"}}
   <main class="content" role="main">
     <article class="{{post_class}}">
-      <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="on " separator=" | "}}</span>
-      <h1 class="post-title">{{{title}}}</h1>
+      <header class="post-header">
+        <span class="post-meta"><time datetime="{{date format="YYYY-MM-DD"}}">{{date format='DD MMM YYYY'}}</time> {{tags prefix="on " separator=" | "}}</span>
+        <h1 class="post-title">{{{title}}}</h1>
+      </header>
       <section class="post-content">
         {{content}}
       </section>
