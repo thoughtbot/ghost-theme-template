@@ -9,7 +9,7 @@ var sass = require('gulp-sass'),
 // Stylesheets
 
 gulp.task('sass', function () {
-  gulp.src('./assets/sass/*.scss')
+  gulp.src('./assets/scss/*.scss')
     .pipe(sass({
         errLogToConsole: false,
         onError: function(err) {
@@ -32,7 +32,7 @@ gulp.task('jshint', function () {
 gulp.task('default', ['sass', 'jshint'], function() {
 
   // Watch sass files
-  gulp.watch('./assets/sass/**/*.scss', ['sass']);
+  gulp.watch('./assets/scss/**/*.scss', ['sass']);
 
   // Watch js files
   gulp.watch('./assets/scripts/**/*.js', ['scripts']);

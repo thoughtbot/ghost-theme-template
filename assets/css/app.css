@@ -205,11 +205,11 @@ button[disabled], html input[disabled] {
       display: block;
       width: auto;
       margin: 0 auto; }
-  .site-header .blog-title, .site-header .page-title {
+  .site-header .blog-title {
     font-weight: bold;
     font-family: 'Open Sans', sans-serif;
     color: whitesmoke; }
-  .site-header .blog-description, .site-header .page-description {
+  .site-header .blog-description {
     font-size: 1.125em;
     font-weight: 300;
     font-family: 'Merriweather', sans-serif;
