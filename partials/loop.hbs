@@ -11,9 +11,9 @@
       <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
     </section>
     <footer class="post-meta">
-      {{#if author.image}}
+      {{#if author.profile_image}}
         <figure class="author-thumb">
-          <img src="{{author.image}}" alt="Author image" />
+          <img src="{{author.profile_image}}" alt="Author image" />
         </figure>
       {{/if}}
       {{author}}
@@ -22,4 +22,5 @@
     </footer>
   </article>
 {{/foreach}}
+
 {{pagination}}

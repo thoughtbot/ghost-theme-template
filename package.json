@@ -2,9 +2,14 @@
   "name": "Abstraction",
   "description": "A gulp based scaffold for building ghost themes",
   "version": "0.2.0",
+  "author": {
+    "name": "Will H McMahan",
+    "email": "will@mcmahan.me",
+    "url": "https://mcmahan.me"
+  },
   "repository": {
     "type": "git",
-    "url": "http://github.com/whmii/Abstraction"
+    "url": "http://github.com/thoughtbot/Abstraction"
   },
   "devDependencies": {
     "gulp": "~3.8.0",

@@ -2,20 +2,20 @@
 
 {{#author}}
   <header class="site-header author-header
-    {{#if cover}}
-      " style="background-image: url({{cover}})
+    {{#if cover_image}}
+      " style="background-image: url({{cover_image}})
     {{else}}
-      {{#if @blog.cover}}
-        " style="background-image: url({{@blog.cover}})
+      {{#if @blog.cover_image}}
+        " style="background-image: url({{@blog.cover_image}})
       {{else}}
         no-cover
       {{/if}}
     {{/if}}">
   </header>
   <section class="author-profile inner">
-    {{#if image}}
+    {{#if profile_image}}
       <figure class="author-image">
-        <img src="{{image}}" alt="{{name}}'s Picture">
+        <img src="{{profile_image}}" alt="{{name}}'s Picture">
       </figure>
     {{/if}}
     <h1 class="author-title">{{name}}</h1>
@@ -31,6 +31,7 @@
     </div>
   </section>
 {{/author}}
+
 <main class="content" role="main">
   {{! Include the post loop - partials/loop.hbs }}
   {{> "loop"}}
