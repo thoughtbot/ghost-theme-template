@@ -10,6 +10,8 @@ A project scaffold for building [Ghost](http://github.com/tryghost/ghost/) theme
 
 - Blazing fast Lib-Sass
 
+- Bourbon and Neat
+
 - The amazing power of Autoprefixer
 
 - Js Hint with Stylish

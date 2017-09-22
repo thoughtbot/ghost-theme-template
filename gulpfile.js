@@ -1,40 +1,40 @@
-var gulp = require('gulp');
+var autoprefix = require("gulp-autoprefixer"),
+    bourbon    = require("bourbon").includePaths,
+    gulp       = require("gulp"),
+    jshint     = require("gulp-jshint"),
+    neat       = require("bourbon-neat").includePaths,
+    sass       = require("gulp-sass"),
+    stylish    = require("jshint-stylish");
 
-var sass = require('gulp-sass'),
-  autoprefix = require('gulp-autoprefixer'),
-  jshint = require('gulp-jshint'),
-  stylish = require('jshint-stylish'),
-  notify = require('gulp-notify');
+var paths = {
+  scss: "./assets/scss/**/*.scss",
+  css: "./assets/css/",
+  js: "./assets/js/**/*.js"
+};
 
 // Stylesheets
 
-gulp.task('sass', function () {
-  gulp.src('./assets/scss/*.scss')
+gulp.task("sass", function () {
+  return gulp.src(paths.scss)
     .pipe(sass({
-        errLogToConsole: false,
-        onError: function(err) {
-            return notify().write(err);
-        }}))
-    .pipe(autoprefix('last 2 versions'))
-    .pipe(gulp.dest('./assets/css'))
+      sourcemaps: true,
+      includePaths: [bourbon, neat]
+    }).on("error", sass.logError))
+    .pipe(autoprefix("last 2 versions"))
+    .pipe(gulp.dest(paths.css));
 });
 
 // Javascript
 
-gulp.task('jshint', function () {
-  gulp.src('./assets/js/*')
+gulp.task("jshint", function () {
+  gulp.src(paths.js)
     .pipe(jshint())
-    .pipe(jshint.reporter('jshint-stylish'))
+    .pipe(jshint.reporter("jshint-stylish"));
 });
 
 // Tasks
 
-gulp.task('default', ['sass', 'jshint'], function() {
-
-  // Watch sass files
-  gulp.watch('./assets/scss/**/*.scss', ['sass']);
-
-  // Watch js files
-  gulp.watch('./assets/scripts/**/*.js', ['scripts']);
-
+gulp.task("default", ["sass", "jshint"], function() {
+  gulp.watch(paths.scss, ["sass"]);
+  gulp.watch(paths.js, ["jshint"]);
 });
