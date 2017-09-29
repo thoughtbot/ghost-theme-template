@@ -29,5 +29,5 @@
     "jshint": "^2.9.5",
     "jshint-stylish": "^2.2.1"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
