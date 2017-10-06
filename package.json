@@ -22,12 +22,18 @@
   "devDependencies": {
     "bourbon": "^5.0.0-beta.8",
     "bourbon-neat": "^2.1.0",
+    "chalk": "^2.1.0",
+    "gscan": "^1.2.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-jshint": "^2.0.4",
+    "gulp-run": "^1.7.1",
     "gulp-sass": "^3.1.0",
+    "gulp-zip": "^4.0.0",
     "jshint": "^2.9.5",
-    "jshint-stylish": "^2.2.1"
+    "jshint-stylish": "^2.2.1",
+    "lodash": "^4.17.4",
+    "run-sequence": "^2.2.0"
   },
   "license": "MIT"
 }
