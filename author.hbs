@@ -1,38 +1,43 @@
 {{!< default}}
 
 {{#author}}
-  <header class="site-header author-header
+  <header
     {{#if cover_image}}
-      " style="background-image: url({{cover_image}})
-    {{else}}
-      {{#if @blog.cover_image}}
-        " style="background-image: url({{@blog.cover_image}})
-      {{else}}
-        no-cover
-      {{/if}}
-    {{/if}}">
-  </header>
-  <section class="author-profile inner">
+      style="background-image: url({{cover_image}})"
+    {{else if @blog.cover_image}}
+      style="background-image: url({{@blog.cover_image}}"
+    {{/if}}>
     {{#if profile_image}}
-      <figure class="author-image">
+      <figure>
         <img src="{{profile_image}}" alt="{{name}}'s Picture">
       </figure>
     {{/if}}
-    <h1 class="author-title">{{name}}</h1>
-    <p class="author-bio">{{bio}}</p>
-    <div class="author-meta">
-      {{#if location}}
-        <span class="author-location">{{location}}</span>
-      {{/if}}
-      {{#if website}}
-        <span class="author-link"><a href="{{website}}">{{website}}</a></span>
-      {{/if}}
-      <span class="author-stats"> {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}</span>
-    </div>
-  </section>
+    <h1>
+      {{name}}
+    </h1>
+    <p>
+      {{bio}}
+    </p>
+    <ul>
+      <li>
+        {{#if location}}
+          {{location}}
+        {{/if}}
+      </li>
+      <li>
+        {{#if website}}
+          <a href="{{website}}">
+            {{website}}
+          </a>
+        {{/if}}
+      </li>
+      <li>
+        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+      </li>
+    </ul>
+  </header>
 {{/author}}
 
-<main class="content" role="main">
-  {{! Include the post loop - partials/loop.hbs }}
+<main role="main">
   {{> "loop"}}
 </main>

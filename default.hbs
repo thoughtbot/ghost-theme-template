@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{meta_title}}</title>
-    <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}">
     {{ghost_head}}
   </head>
   <body class="{{body_class}}">
@@ -14,12 +14,8 @@
       <a href="{{@blog.url}}/rss/">
         Subscribe via RSS!
       </a>
-
-
-
       {{#if @labs.subscribers}}
         {{subscribe_form placeholder="youremail@example.com"}}
-      </div>
       {{/if}}
       <section>
         All content copyright
