@@ -6,6 +6,7 @@ var _          = require("lodash"),
     gulp       = require("gulp"),
     jshint     = require("gulp-jshint"),
     neat       = require("bourbon-neat").includePaths,
+    package    = require("./package.json"),
     run        = require("run-sequence"),
     sass       = require("gulp-sass"),
     stylish    = require("jshint-stylish"),
@@ -74,15 +75,15 @@ gulp.task("scan", function() {
   }
 
   return gscan.checkZip({
-    path: "./ghost-theme-template.zip",
-    name: "ghost-theme-template"
+    path: `./${package.name}.zip`,
+    name: package.name
   })
   .then(outputResults);
 });
 
 gulp.task("zip", function() {
   return gulp.src(["./**/*", "!./node_modules/**"])
-    .pipe(zip("ghost-theme-template.zip"))
+    .pipe(zip(`./${package.name}.zip`))
     .pipe(gulp.dest("."));
 });
 
