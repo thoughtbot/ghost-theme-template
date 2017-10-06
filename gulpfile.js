@@ -93,5 +93,5 @@ gulp.task("default", ["sass", "jshint"], function() {
 });
 
 gulp.task("deploy", function(callback) {
-  run("zip", "scan", callback);
+  run("sass", "zip", "scan", callback);
 });
