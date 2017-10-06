@@ -6,6 +6,7 @@ b-cov
 *.out
 *.pid
 *.gz
+*.css
 
 pids
 logs
@@ -13,6 +14,7 @@ results
 
 npm-debug.log
 node_modules
+assets/css/*
 
 .idea/*
 *.iml
