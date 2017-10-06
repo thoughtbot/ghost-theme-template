@@ -1,32 +1,33 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>{{meta_title}}</title>
-  <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-  <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" />
-  {{ghost_head}}
-</head>
-<body class="{{body_class}}">
-  {{! Render page content here }}
-  {{{body}}}
-  <footer class="site-footer">
-    <a class="subscribe" href="{{@blog.url}}/rss/">Subscribe!</a>
-    <div class="inner">
-      <section class="copyright">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{{meta_title}}</title>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/app.css"}}" />
+    {{ghost_head}}
+  </head>
+  <body class="{{body_class}}">
+    {{{body}}}
+    <footer>
+      <a href="{{@blog.url}}/rss/">
+        Subscribe via RSS!
+      </a>
+
+
+
+      {{#if @labs.subscribers}}
+        {{subscribe_form placeholder="youremail@example.com"}}
+      </div>
+      {{/if}}
+      <section>
         All content copyright
         <a href="{{@blog.url}}/">{{@blog.title}}</a>
         &copy; {{date format="YYYY"}} &bull; All rights reserved.
       </section>
-      <section class="poweredby">
-        Proudly published with <a href="https://ghost.org">Ghost</a>
-      </section>
-    </div>
-  </footer>
-  {{ghost_foot}}
-  <script type="text/javascript" src="{{asset "js/app.js"}}"></script>
-</body>
+    </footer>
+    {{ghost_foot}}
+    <script type="text/javascript" src="{{asset "js/app.js"}}"></script>
+  </body>
 </html>
