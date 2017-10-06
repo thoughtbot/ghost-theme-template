@@ -13,12 +13,22 @@
           {{date format='DD MMM YYYY'}}
         </time>
         {{tags prefix="on " separator=" | "}}
+        {{#if feature_image}}
+          <figure>
+            <img src="{{feature_image}}">
+          </figure>
+        {{/if}}
       </header>
       <section>
         {{content}}
       </section>
       <footer>
         <section>
+          {{#if author.profile_image}}
+            <figure>
+              <img src="{{author.profile_image}}" alt="{{name}}'s Picture">
+            </figure>
+          {{/if}}
           <h4>
             {{author.name}}
           </h4>
