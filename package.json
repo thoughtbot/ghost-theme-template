@@ -1,7 +1,7 @@
 {
   "name": "ghost-theme-template",
   "description": "A gulp based scaffold for building ghost themes",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "engines": {
       "ghost": ">=1.2.0"
   },
