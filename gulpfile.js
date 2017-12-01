@@ -14,9 +14,9 @@ var _          = require("lodash"),
     levels;
 
 var paths = {
-  scss: "./assets/scss/**/*.scss",
+  scss: "./assets/stylesheets/**/*.scss",
   css: "./assets/css/",
-  js: "./assets/js/**/*.js"
+  js: "./assets/javascripts/**/*.js"
 };
 
 levels = {
