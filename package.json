@@ -3,7 +3,7 @@
   "description": "A gulp based scaffold for building ghost themes",
   "version": "1.0.0",
   "engines": {
-      "ghost": ">=1.2.0"
+    "ghost": ">=1.2.0"
   },
   "author": {
     "name": "Will H McMahan",
