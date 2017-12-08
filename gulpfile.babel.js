@@ -38,6 +38,17 @@ gulp.task('sass', () =>
     .pipe(gulp.dest(paths.css))
 );
 
+gulp.task('sasslint', () =>
+  gulp.src([ paths.scss ])
+    .pipe(sasslint({
+      options: {
+        formatter: 'stylish',
+      },
+      configFile: '.sass-lint.yml',
+    }))
+    .pipe(sasslint.format())
+);
+
 gulp.task('jshint', () =>
   gulp.src(paths.js)
     .pipe(jshint())
@@ -89,8 +100,8 @@ gulp.task('zip',  () =>
     .pipe(gulp.dest('.'))
 );
 
-gulp.task('default', ['sass', 'jshint'], () =>
-  gulp.watch(paths.scss, ['sass']),
+gulp.task('default', ['sass', 'sasslint', 'jshint'], () =>
+  gulp.watch(paths.scss, ['sass', 'sasslint']),
   gulp.watch(paths.js, ['jshint'])
 );
 
