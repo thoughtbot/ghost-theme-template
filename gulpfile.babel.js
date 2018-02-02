@@ -12,6 +12,7 @@ import neat       from 'bourbon-neat';
 import pkg        from './package.json';
 import run        from 'run-sequence';
 import sass       from 'gulp-sass';
+import sasslint   from 'gulp-sass-lint';
 import stylish    from 'jshint-stylish';
 import zip        from 'gulp-zip';
 
