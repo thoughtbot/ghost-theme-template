@@ -10,13 +10,13 @@
     {{message}}
   </p>
   <a href="{{@blog.url}}">
-    Go to the front page →
+    {{t "Go to the front page →"}}
   </a>
 </main>
 {{#get "posts" limit="3"}}
   <aside>
     <h2>
-      Some other posts
+      {{t "Some other posts"}}
     </h2>
     {{> "loop"}}
   </aside>

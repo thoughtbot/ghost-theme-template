@@ -12,7 +12,7 @@
         <time datetime="{{date format="YYYY-MM-DD"}}">
           {{date format='DD MMM YYYY'}}
         </time>
-        {{tags prefix="on " separator=" | "}}
+        {{tags prefix=(t " on ") separator=" | "}}
         {{#if feature_image}}
           <figure>
             <img src="{{feature_image}}">
@@ -26,7 +26,7 @@
         <section>
           {{#if author.profile_image}}
             <figure>
-              <img src="{{author.profile_image}}" alt="{{name}}'s Picture">
+              <img src="{{author.profile_image}}" alt="{{{t '{name}’s Picture' name=name }}}">
             </figure>
           {{/if}}
           <h4>
@@ -51,15 +51,15 @@
           </ul>
         </section>
         <section>
-          Share this post on
+          {{t "Share this post"}}
           <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-            Twitter
+            {{t "Twitter"}}
           </a>
-          or
+          {{t " or "}}
           <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-            Facebook
+            {{t "Facebook"}}
           </a>
         </section>
       </footer>
