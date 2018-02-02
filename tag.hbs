@@ -9,9 +9,10 @@
       <p>
         {{tag.description}}
       </p>
-    {{else}}
-      A {{pagination.total}} post collection
     {{/if}}
+    <p>
+      {{plural pagination.total empty=(t "A collection of posts") singular=(t "A collection of 1 post") plural=(t "A collection of % posts")}}
+    </p>
     {{#if tag.feature_image}}
       <figure>
         <img src="{{tag.feature_image}}" alt="{{name}}">

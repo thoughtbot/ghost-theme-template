@@ -10,21 +10,21 @@
     {{message}}
   </p>
   <a href="{{@blog.url}}">
-    Go to the front page →
+    {{t "Go to the front page →"}}
   </a>
   {{#if errorDetails}}
     <section>
-      <h3>Theme errors</h3>
+      <h3>{{t "Theme errors"}}</h3>
       <ul>
         {{#each errorDetails}}
           <li>
             <em>{{{rule}}}</em>
             {{#each failures}}
               <p>
-                Ref: {{ref}}
+                {{t "Ref"}}: {{ref}}
               </p>
               <p>
-                Message: {{message}}
+                {{t "Message"}}: {{message}}
               </p>
             {{/each}}
           </li>

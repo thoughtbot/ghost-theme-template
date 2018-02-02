@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{lang}}">
   <head>
     <meta charset="utf-8">
     <meta name="viewport"
@@ -12,15 +12,14 @@
     {{{body}}}
     <footer>
       <a href="{{@blog.url}}/rss/">
-        Subscribe via RSS!
+        {{t "Subscribe via RSS!"}}
       </a>
       {{#if @labs.subscribers}}
-        {{subscribe_form placeholder="youremail@example.com"}}
+        {{subscribe_form placeholder=(t "youremail@example.com")}}
       {{/if}}
       <section>
-        All content copyright
         <a href="{{@blog.url}}/">{{@blog.title}}</a>
-        &copy; {{date format="YYYY"}} &bull; All rights reserved.
+        &copy; {{date format="YYYY"}} &bull; {{t "All rights reserved."}}
       </section>
     </footer>
     {{ghost_foot}}

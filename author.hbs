@@ -9,7 +9,7 @@
     {{/if}}>
     {{#if profile_image}}
       <figure>
-        <img src="{{profile_image}}" alt="{{name}}'s Picture">
+        <img src="{{profile_image}}" alt="{{{t '{name}’s Picture' name=name }}}">
       </figure>
     {{/if}}
     <h1>
@@ -32,7 +32,7 @@
         {{/if}}
       </li>
       <li>
-        {{plural ../pagination.total empty='No posts' singular='% post' plural='% posts'}}
+        {{plural ../pagination.total empty=(t "No posts") singular=(t "1 post") plural=(t "% posts")}}
       </li>
     </ul>
   </header>

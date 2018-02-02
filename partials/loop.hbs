@@ -13,11 +13,11 @@
       <footer>
         {{#if author.profile_image}}
           <figure>
-            <img src="{{author.profile_image}}" alt="{{author.name}}'s Picture">
+            <img src="{{author.profile_image}}"  alt="{{{t '{name}’s Picture' name=author.name }}}">
           </figure>
         {{/if}}
         {{author}}
-        {{tags prefix=" on "}}
+        {{tags prefix=(t " on ")}}
         <time datetime="{{date format='YYYY-MM-DD'}}">
           {{date format="DD MMMM YYYY"}}
         </time>
