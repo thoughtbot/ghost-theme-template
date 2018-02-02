@@ -8,6 +8,16 @@ project adheres to [Semantic Versioning](http://semver.org).
 ### Added
 
 - Added change log to project.
+- Added [`sass-lint`](https://github.com/sasstools/sass-lint) to stylesheet
+  build process.
+
+### Changed
+
+- Changed gulpfile to ECMAScript.
+
+### Fixed
+
+- Fixed malformed HTML in the tag loop partial.
 
 [unreleased]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.0.0...HEAD
 
@@ -15,7 +25,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ### Added
 
-- Added [`gscan`](https://github.com/TryGhost/gscan) to the gulp build process. 
+- Added [`gscan`](https://github.com/TryGhost/gscan) to the gulp build process.
   Upon the activation of the `gulp deploy` process, Gscan will checks the
   theme for errors, deprecations, best practices and looks to see ensure the
   features used within the theme are supported.
