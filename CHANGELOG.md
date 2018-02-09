@@ -5,21 +5,24 @@ project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
 
+## [1.1.0] - 2018-02-09
+
 ### Added
 
 - Added change log to project.
+- Added support for internationalization.
+- Added Spanish as an available language in theme translations.
 - Added [`sass-lint`](https://github.com/sasstools/sass-lint) to stylesheet
   build process.
 
 ### Changed
 
 - Changed gulpfile to ECMAScript.
+- Changed recommended Ghost engine version to `v1.20.0`.
 
 ### Fixed
 
 - Fixed malformed HTML in the tag loop partial.
-
-[unreleased]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.0.0...HEAD
 
 ## [1.0.0] - 2017-10-16
 
@@ -46,4 +49,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Removed legacy `meta` objects within the `<head>` that are now handled exclusively buy
   Ghost core.
 
+
+[unreleased]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.1.0...HEAD
+[1.1.0]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/thoughtbot/ghost-theme-template/compare/v0.2.0...v1.0.0
