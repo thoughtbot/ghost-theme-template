@@ -96,7 +96,7 @@ gulp.task('scan', () => {
 });
 
 gulp.task('zip',  () =>
-  gulp.src(['./**/*', '!./node_modules/**'])
+  gulp.src(['./**/*', '!./node_modules/**', `!./${pkg.name}.zip`])
     .pipe(zip(`./${pkg.name}.zip`))
     .pipe(gulp.dest('.'))
 );
