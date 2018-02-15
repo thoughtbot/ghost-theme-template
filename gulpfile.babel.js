@@ -107,5 +107,5 @@ gulp.task('default', ['sass', 'sasslint', 'jshint'], () =>
 );
 
 gulp.task('deploy', (callback) =>
-  run('sass', 'zip', callback)
+  run('sass', 'zip', 'scan', callback)
 );
