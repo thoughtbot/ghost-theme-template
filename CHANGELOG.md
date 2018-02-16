@@ -4,6 +4,7 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
+- Add Chinese (simplified) translation
 
 ## [1.1.0] - 2018-02-09
 
