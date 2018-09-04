@@ -11,12 +11,7 @@
         </p>
       </section>
       <footer>
-        {{#if author.profile_image}}
-          <figure>
-            <img src="{{author.profile_image}}"  alt="{{{t '{name}’s Picture' name=author.name }}}">
-          </figure>
-        {{/if}}
-        {{author}}
+        {{> "authors" }}
         {{tags prefix=(t " on ")}}
         <time datetime="{{date format='YYYY-MM-DD'}}">
           {{date format="DD MMMM YYYY"}}
