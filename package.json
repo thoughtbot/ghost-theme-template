@@ -1,9 +1,9 @@
 {
   "name": "ghost-theme-template",
   "description": "A gulp based scaffold for building ghost themes",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "engines": {
-    "ghost": ">=1.20.0"
+    "ghost": ">=2.0.0"
   },
   "author": {
     "name": "Will H McMahan",
@@ -27,10 +27,10 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "bourbon": "^5.0.0-beta.8",
-    "bourbon-neat": "^2.1.0",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.0",
     "chalk": "^2.1.0",
-    "gscan": "^1.2.3",
+    "gscan": "^1.4.3",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-babel": "^7.0.0",
