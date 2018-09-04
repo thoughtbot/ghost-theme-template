@@ -24,31 +24,7 @@
       </section>
       <footer>
         <section>
-          {{#if author.profile_image}}
-            <figure>
-              <img src="{{author.profile_image}}" alt="{{{t '{name}’s Picture' name=name }}}">
-            </figure>
-          {{/if}}
-          <h4>
-            {{author.name}}
-          </h4>
-          <p>
-            {{author.bio}}
-          </p>
-          <ul>
-            {{#if author.location}}
-              <li>
-                {{author.location}}
-              </li>
-            {{/if}}
-            {{#if author.website}}
-              <li>
-                <a href="{{author.website}}">
-                  {{author.website}}
-                </a>
-              </li>
-            {{/if}}
-          </ul>
+          {{> "authors" }}
         </section>
         <section>
           {{t "Share this post"}}

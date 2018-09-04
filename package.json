@@ -19,8 +19,7 @@
     "bourbon",
     "neat",
     "gulp",
-    "ghost",
-    "theme"
+    "ghost-theme"
   ],
   "bugs": "https://github.com/ghost-theme-template/graphs/issues",
   "contributors": "https://github.com/thoughtbot/ghost-theme-template/graphs/contributors",
