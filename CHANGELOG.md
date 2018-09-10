@@ -4,7 +4,13 @@ All notable changes to this project will be documented in this file. This
 project adheres to [Semantic Versioning](http://semver.org).
 
 ## [Unreleased (`master`)][unreleased]
-- Add Chinese (simplified) translation
+
+## [2.0.0] - 2018-09-10
+
+### Added
+
+- Added Chinese (simplified) translation
+- Added support for Ghost 2.0
 
 ## [1.1.0] - 2018-02-09
 
@@ -50,7 +56,7 @@ project adheres to [Semantic Versioning](http://semver.org).
 - Removed legacy `meta` objects within the `<head>` that are now handled exclusively buy
   Ghost core.
 
-
-[unreleased]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.1.0...HEAD
+[unreleased]: https://github.com/thoughtbot/ghost-theme-template/compare/v2.0.0...HEAD
+[2.0.0]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.1.0...v2.0.0
 [1.1.0]: https://github.com/thoughtbot/ghost-theme-template/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/thoughtbot/ghost-theme-template/compare/v0.2.0...v1.0.0
